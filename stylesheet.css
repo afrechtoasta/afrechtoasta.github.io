@@ -1,0 +1,15 @@
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#header-name{
+    margin-bottom: 0;
+}
+
+#header-info{
+    margin-top: 0;
+}
