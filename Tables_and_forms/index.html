@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Ordering Form</title>
+
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+
+        #sauce-selections {
+            border: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Pizza Ordering Form</h1>
+    </header>
+    <main>
+        <form>
+            <div>
+                <h2>Contact Information</h2>
+                <label for="Name">Name:</label>
+                <input type="text" name="Name" id="Name" required><br>
+                <label for="Phone">Phone:</label>
+                <input type="text" name="Phone" id="Phone" required><br>
+                <label for="Email">Email:</label>
+                <input type="text" name="Email" id="Email" required><br>
+            </div>
+            <div>
+                <h2>Select Pizza Size</h2>
+                <label>Pizza Size:</label>
+                <select name="sizes" required>
+                    <option value="">None</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option>
+                    <option value="X-Large">X-Large</option>
+                </select>
+            </div>
+            <div>
+                <h2>Select Sauce</h2>
+                <fieldset id="sauce-selections">
+                    <input type="radio" name="sauce-selections" id="marinara" required>
+                    <label for="marinara">Marinara</label><br>
+                    <input type="radio" name="sauce-selections" id="ranch">
+                    <label for="ranch">Ranch</label><br>
+                    <input type="radio" name="sauce-selections" id="noSauce">
+                    <label for="noSauce">No Sauce</label><br>
+                </fieldset>
+            </div>
+            <div>
+                <h2>Select Toppings</h2>
+                <input type="checkbox" id="topping1" name="topping1" value="Pepperoni">
+                <label for="topping1">Pepperoni</label>
+                <input type="checkbox" id="topping2" name="topping2" value="Sausage">
+                <label for="topping2">Sausage</label><br>
+                <input type="checkbox" id="topping3" name="topping3" value="Mushroom">
+                <label for="topping3">Mushroom</label>
+                <input type="checkbox" id="topping4" name="topping4" value="Pineapple">
+                <label for="topping4">Pineapple</label><br>
+                <input type="checkbox" id="topping5" name="topping5" value="Peppers">
+                <label for="topping5">Peppers</label>
+                <input type="checkbox" id="topping6" name="topping6" value="Onions">
+                <label for="topping6">Onions</label><br>
+            </div>
+            <div>
+                <h2>Additional Information</h2>
+            </div>
+            <textarea id="instructions-text-area" name="instructions">
+                    Add instructions:
+</textarea><br>
+            <input type="submit" value="Submit">
+        </form><br>
+
+
+
+        <table id="video-game-table">
+            <caption>My Favorite Video Games</caption>
+            <thead>
+                <tr>
+                    <th>Developer</th>
+                    <th>Title</th>
+                    <th>Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Bungie</td>
+                    <td>Halo</td>
+                    <td>2001</td>
+                </tr>
+                <tr>
+                    <td>Halo 2</td>
+                    <td>2004</td>
+                </tr>
+                <tr>
+                    <td>Halo 3</td>
+                    <td>2007</td>
+                </tr>
+                <tr>
+                    <td>Mojang</td>
+                    <td>Mincraft</td>
+                    <td>2011</td>
+                </tr>
+                <tr>
+                    <td colspan="3">Count: 4</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+    </main>
+</body>
+
+</html>
