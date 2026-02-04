@@ -1,0 +1,78 @@
+
+h1 {
+  font-size: 3rem;
+}
+
+body{
+    background-color: lightblue;
+    font-size: 14px;
+}
+
+.start{
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h2{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.blue{
+    background-color: darkblue;
+    color: white;     
+    border: 2px solid black;         
+    line-height: 2;          
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;   
+    padding-top: 5px;
+  padding-bottom: 5px;   
+
+}
+
+ol{
+  list-style-type:decimal-leading-zero;
+  li::marker {
+    font-size: 1.3em;
+  }
+}
+#otherlinks{
+  list-style-type: decimal-leading-zero;
+  font-size: 16px;
+}
+
+#paragraph2{
+  width: 700px;              
+  margin: 10px;         
+  padding-left: 30px;
+  padding-right: 30px;   
+  padding-top: 15px;
+  padding-bottom: 15px;        
+  border: 2px solid green;  
+  border-width: 5px;        
+  line-height: 2;          
+  font-size: 13px;
+  background-color: white; 
+}
+
+#w3link{
+  color: darkred;
+}
+
+table {
+  background-color: white;
+  border-collapse: collapse; /* removes double borders */
+}
+
+th, td {
+  border: 2px solid black;    /* visible grid lines */
+  padding: 5px 5px;        /* breathing room */
+  text-align: left;
+}
+
+th {
+  background-color: lightgrey; /* header row */
+  font-weight: bold;
+}
+
