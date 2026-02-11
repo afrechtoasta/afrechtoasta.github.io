@@ -1,0 +1,134 @@
+body{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+}
+
+#menuItems{
+    background-color: black;
+    min-width: max-content;
+}
+
+#menuItems #recentArticles {
+    width: 100%;
+    padding: 10px;
+    transition: background 2s ease;
+}
+
+#menuItems #recentArticles:hover,
+#menuItems #recentArticles:focus {
+    background: #c99719; 
+    color: white;
+    outline: none;
+}
+
+#menuItems #jumpMenu {
+    overflow: hidden;
+    max-height: 0;
+    transition:
+        max-height 0.35s ease,
+        background 0.25s ease;
+    margin: 0; 
+    padding: 0; 
+    list-style: none; 
+    box-sizing: border-box;
+}
+
+#recentArticles:hover + #jumpMenu,
+#menuItems #jumpMenu:hover,
+#menuItems:focus-within #jumpMenu {
+    max-height: 300px;
+    background: #c99719; 
+}
+
+
+#jumpMenu li {
+    display: block;
+    padding: 10px;
+}
+
+#jumpMenu li a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+#jumpMenu li a:hover {
+    color: white;
+    background-color: blue;
+}
+
+#container article a::after {
+    content: url('arrow.png');
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    margin-left: 8px;
+    vertical-align: middle;
+}
+
+
+
+#menuItems button{
+
+    background-color: blue;
+    color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    min-width: 100%;
+}
+
+main header{
+    background-color: red;
+    text-align: center;
+    font-size: x-large;
+    padding: 1.5rem;
+}
+
+
+main h1 {
+    text-align: center;
+}
+
+
+#container{
+    display: grid;
+    gap: 1rem;
+    padding: 1.5rem;
+    grid-template-columns: auto auto auto auto;
+}
+
+#container article {
+  color: #999;                 
+  transform: scale(0.95);   
+  overflow: hidden;            
+  transition: 
+    color 2s ease,
+    transform 2s ease
+}
+
+
+#container article:hover {
+  color: #222;                 
+  transform: scale(1);   
+}
+
+
+
+#container article p:first-of-type::first-letter{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 36px;
+}
+
+
+#thanks{
+    font-size: 3rem;
+    position: fixed; 
+    border: 2px solid black;
+    bottom: 0;      
+    right: 0;        
+    padding: 10px;
+    background-color: #73b2ff;
+    z-index: 1000; 
+}
