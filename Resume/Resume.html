@@ -4,16 +4,18 @@
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="styles.css" />
 	<title>Resume</title>
 </head>
 
 <body>
-	<header>
+	<header id="header">
 		<h1>Alisa Crawford</h1>
 		<h2>al539883@ucf.edu</h2>
 	</header>
 
 	<h3>Objective</h3>
+	<hr>
 	<p>
 		College senior pursuing a BA in Information Technology with a passion for
 		blending tech and creativity. Skilled in IT fundamentals, system
@@ -24,6 +26,7 @@
 	</p>
 
 	<h3>Education</h3>
+	<hr>
 	<p>University of Central Florida | Orlando, Fl May 2026</p>
 	<p>Bachelor of Science in Information Technology GPA: 3.4/4.0</p>
 	<p>
@@ -32,42 +35,53 @@
 	</p>
 
 	<h3>Projects</h3>
-
+	<hr>
 	<p>
-		CIS 3360 | Security In Computing: Analyzing Packets with Wireshark •
-		Analyze local network traffic to capture and inspect packets using
-		Wireshark. • Identified various protocols in use, such as TCP, UDP, and
-		HTTP
+		CIS 3360 | Security In Computing:
+	<ul>
+		<li>Analyzing Packets with Wireshark</li>
+		<li>Analyze local network traffic to capture and inspect packets using
+			Wireshark</li>
+		<li>Identified various protocols in use, such as TCP, UDP, and HTTP</li>
+	</ul>
+
+
 	</p>
 
 	<p>
-		CAP 3104 | Human and Technology Interaction: Developed User Interface
-		using MySQL • With a 4-person team was responsible for implementing all
-		necessary changes to the database and verifying their functionality
-		through comprehensive testing protocols. • Incorporated HTI concepts to
-		design a functional, efficient, and user-friendly interface.
+		CAP 3104 | Human and Technology Interaction:
+	<ul>
+		<li>Developed User Interface using MySQL</li>
+		<li>With a 4-person team, responsible for implementing all necessary changes to the database and verifying their
+			functionality through comprehensive testing protocols</li>
+		<li>Incorporated HTI concepts to design a functional, efficient, and user-friendly interface</li>
+	</ul>
 	</p>
 
 	<p>
-		CIS 4631 | Security Operating System and Administrations Simulating
-		Encryption and Decryption on various Operating Systems • Utilized virtual
-		machines to simulate different operating systems (Ubuntu, Kali Linux, and
-		Windows Server) and employed the John the Ripper software to attempt
-		decryption of passwords after encrypting them
+		CIS 4631 | Security Operating System and Administrations:
+	<ul>
+		<li>Simulating Encryption and Decryption on various Operating Systems</li>
+		<li>Utilized virtual machines to simulate different operating systems (Ubuntu, Kali Linux, and Windows Server)
+		</li>
+		<li>Employed the John the Ripper software to attempt decryption of passwords after encrypting them</li>
+	</ul>
 	</p>
 
 	<p>
-		CIS 4524 | Managing IT Integration Project Management • Navigated various
-		challenges throughout the project including budget constraints, technical
-		compatibility issues, and stakeholder requirements. • Was assigned a
-		different role each week, including serving roles like project manager and
-		financial analyst which allowed for the experience of various
-		responsibilities. • Created project timeline as a team and managed
-		resource allocation to ensure on-time delivery within the simulated
-		established budget.
+		CIS 4524 | Managing IT Integration Project Management:
+	<ul>
+		<li>Navigated various challenges throughout the project including budget constraints, technical compatibility
+			issues, and stakeholder requirements</li>
+		<li>Was assigned a different role each week, including serving roles like project manager and financial analyst,
+			which allowed for the experience of various responsibilities</li>
+		<li>Created project timeline as a team and managed resource allocation to ensure on-time delivery within the
+			simulated established budget</li>
+	</ul>
 	</p>
 
 	<h3>Skill</h3>
+	<hr>
 	<p>Languages: C, Java, Python, SQL</p>
 	<p>Software: Visual Studio Code, Code::Blocks, MySQL, GitHub</p>
 	<p>Tools: Wireshark, Procreate, VMware, Microsoft Office Suite</p>
@@ -75,11 +89,19 @@
 		Communication: Group Collaboration, Technical Presentations, Documentation
 	</p>
 
+
 	<h3>Project Examples:</h3>
-	<ul>
-		<li><a href="./Project 1.html">Project 1</a></li>
-		<li><a href="./Project 2.html">Project 2</a></li>
-	</ul>
+	<hr>
+	<div class="project-grid">
+		<div class="project-card">
+			<a href="./Project 1.html"><strong>Project 1:</strong> Analyzing with Wireshark</a>
+			<p>Used Wireshark to analyze network traffic and learn about protocols and packet inspection.</p>
+		</div>
+		<div class="project-card">
+			<a href="./Project 2.html"><strong>Project 2:</strong> Human and Technology Interaction</a>
+			<p>Collaborated on a user-friendly SQL database interface, applying HTI concepts.</p>
+		</div>
+	</div>
 
 </body>
 
