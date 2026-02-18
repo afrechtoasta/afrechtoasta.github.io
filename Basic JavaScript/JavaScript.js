@@ -26,7 +26,7 @@ function runForLoop(){
     document.getElementById("forLoopResult").textContent = result;
 };
 
-function showOddNumbercss(){
+function showOddNumbers(){
 
    let result = "";
     for (let i = 1; i <= counter; i++) {
@@ -34,7 +34,7 @@ function showOddNumbercss(){
             result += i + " ";
         }
     }
-    document.getElementById("oddNumberResult").innerHTML = result;
+    document.getElementById("oddNumberResult").textContent = result;
 
 };
 
