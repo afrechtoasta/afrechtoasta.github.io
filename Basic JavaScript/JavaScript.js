@@ -34,7 +34,7 @@ function showOddNumbercss(){
             result += i + " ";
         }
     }
-    document.getElementById("oddNumberResult").textContent = result;
+    document.getElementById("oddNumberResult").innerHTML = result;
 
 };
 
